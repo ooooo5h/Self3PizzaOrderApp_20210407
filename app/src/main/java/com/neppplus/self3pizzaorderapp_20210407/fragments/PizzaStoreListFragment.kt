@@ -11,7 +11,10 @@ import com.neppplus.self3pizzaorderapp_20210407.datas.Store
 
 class PizzaStoreListFragment : Fragment() {
 
-    lateinit var mStoreList : ArrayList<Store>
+//    틀렸지
+//    lateinit var mStoreList : ArrayList<Store>
+
+    val mStoreList = ArrayList<Store>()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -28,6 +31,8 @@ class PizzaStoreListFragment : Fragment() {
         mStoreList.add(Store("파파존스", "",""))
         mStoreList.add(Store("도미노피자", "",""))
         mStoreList.add(Store("미스터피자", "",""))
+
+
 
 
     }

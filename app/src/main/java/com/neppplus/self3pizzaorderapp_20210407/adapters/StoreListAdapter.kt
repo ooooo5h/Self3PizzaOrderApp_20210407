@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import android.widget.ImageView
+import android.widget.TextView
 import com.neppplus.self3pizzaorderapp_20210407.R
 import com.neppplus.self3pizzaorderapp_20210407.datas.Store
 
@@ -23,8 +25,13 @@ class StoreListAdapter(
 
         val row = tempRow!!
 
+        val clickedStore = mList[position]
 
-//        실제데이터 추가해줘야함
+        val logoImg = row.findViewById<ImageView>(R.id.logoImg)
+        val nameTxt = row.findViewById<TextView>(R.id.nameTxt)
+
+        nameTxt.text = clickedStore.name
+
 
         return row
     }

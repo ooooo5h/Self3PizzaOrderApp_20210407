@@ -23,6 +23,9 @@ class StoreListAdapter(
 
         val row = tempRow!!
 
+
+//        실제데이터 추가해줘야함
+
         return row
     }
 }
